@@ -213,7 +213,7 @@ def review():
             return "already changed"
         
         new_review = reviews(title=book.title, isbn=isbn,review=review,user_name=username)
-        if new_review:
+        
         db.session.add(new_review)
         db.session.commit()
 
